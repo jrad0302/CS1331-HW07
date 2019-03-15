@@ -13,7 +13,7 @@ public class Store implements StoreOrganizer {
     * @param numPets an integer representing the number of pets
     */
     public Store(int numPets) {
-        Animal[] this.pets = new Animal[numPets];
+        pets = new Animal[numPets];
     }
 
     /**
