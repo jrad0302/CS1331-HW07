@@ -42,13 +42,7 @@ public class Cat extends Animal {
             // if they are equal according to the Animal compare
             if (super.compareTo(c) == 0) {
                 // compare mice caught
-                if (this.miceCaught > c.getMiceCaught()) {
-                    return 1;
-                } else if (this.miceCaught < c.getMiceCaught()) {
-                    return -1;
-                } else {
-                    return 0;
-                }
+                return c.getMiceCaught() = miceCaught;
             // if they're not equal, reuse Animal compareTo
             } else {
                 return super.compareTo(o);

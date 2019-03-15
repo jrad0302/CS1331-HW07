@@ -74,13 +74,7 @@ public class Dog extends Animal {
             // if they are equal according to the Animal compare
             if (super.compareTo(d) == 0) {
                 // compare drool rates
-                if (this.droolRate > d.getDroolRate()) {
-                    return 1;
-                } else if (this.droolRate < d.getDroolRate()) {
-                    return -1;
-                } else {
-                    return 0;
-                }
+                return d.getDroolRate - droolRate;
             // if they're not equal, reuse Animal compareTo
             } else {
                 return super.compareTo(o);
