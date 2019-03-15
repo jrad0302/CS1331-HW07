@@ -37,6 +37,8 @@ public class Store implements StoreOrganizer {
 
     /**
      * This method should sort through the pets using bubble sort
+     * Big O (n^2)
+     * The reason why is because at worst you have to compare all n terms to all n terms: n^2
      */
     public void sort() {
         int len = count;
@@ -64,6 +66,8 @@ public class Store implements StoreOrganizer {
     /**
      * This method should search through the pets to look for a specific
      * animal. This should use the binary search method
+     * Big(O): log(n)
+     * Big O is log(n) because it only searches through log2(n) terms at worst case
      * @param a the animal to search through the list
      * @return the index the animal is found or -1 if the animal is not found
      */
@@ -89,6 +93,8 @@ public class Store implements StoreOrganizer {
     /**
      * This method should search through the pets to look for a specific
      * animal. This method should use the linear search method
+     * Big (O): n
+     * Big O is n because at worst case it searches through all n terms
      * @param a the animal to look for
      * @return the index the animal is found or -1 if the animal is not found
      */
