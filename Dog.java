@@ -69,7 +69,7 @@ public class Dog extends Animal {
     */
     public int compareTo(Animal o) {
         // if the Animal is a Dog
-        if (o.getStoreID() == 100) {
+        if (o.getstoreId() == 100) {
             Dog d = (Dog) o;
             // if they are equal according to the Animal compare
             if (super.compareTo(d) == 0) {

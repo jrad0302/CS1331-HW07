@@ -37,7 +37,7 @@ public class Cat extends Animal {
     */
     public int compareTo(Animal o) {
         // if the animal is a cat
-        if (o.getStoreID() == 200) {
+        if (o.getstoreId() == 200) {
             Cat c = (Cat) o;
             // if they are equal according to the Animal compare
             if (super.compareTo(c) == 0) {
