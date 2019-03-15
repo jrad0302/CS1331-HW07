@@ -34,7 +34,7 @@ public abstract class Animal implements Comparable<Animal> {
     * This method returns the storeId of the Animal
     * @return the storeId of the Animal
     */
-    public int getstoreId() {
+    public int getStoreId() {
         return storeId;
     }
 
@@ -74,7 +74,7 @@ public abstract class Animal implements Comparable<Animal> {
     * This method sets the storeId of the Animal
     * @param si the storeId of the Animal
     */
-    public void setstoreId(int si) {
+    public void setStoreId(int si) {
         storeId = si;
     }
 
@@ -93,9 +93,9 @@ public abstract class Animal implements Comparable<Animal> {
     * @return an int, positive/negtive/zero, representing larger than/smaller than/equal to
     */
     public int compareTo(Animal o) {
-        if (this.storeId > o.getstoreId()) {
+        if (this.storeId > o.getStoreId()) {
             return 1;
-        } else if (this.storeId < o.getstoreId()) {
+        } else if (this.storeId < o.getStoreId()) {
             return -1;
         } else {
             // negative if this.name is alphabetically before, positive if after, zero if the same
