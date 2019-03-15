@@ -84,7 +84,7 @@ public abstract class Animal implements Comparable<Animal> {
     */
     public String toString() {
         String pricef = String.format("%.2f", price);
-        return "Store ID: " + storeId + ", Name: " + name + ", Price: " + price;
+        return "Store ID: " + storeId + ", Name: " + name + ", Price: " + pricef;
     }
 
     /**
