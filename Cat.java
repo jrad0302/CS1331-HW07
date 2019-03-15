@@ -42,7 +42,7 @@ public class Cat extends Animal {
             // if they are equal according to the Animal compare
             if (super.compareTo(c) == 0) {
                 // compare mice caught
-                return c.getMiceCaught() = miceCaught;
+                return c.getMiceCaught() - miceCaught;
             // if they're not equal, reuse Animal compareTo
             } else {
                 return super.compareTo(o);
