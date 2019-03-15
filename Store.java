@@ -39,7 +39,7 @@ public class Store implements StoreOrganizer {
      * This method should sort through the pets using bubble sort
      */
     public void sort() {
-        int len = pets.length;
+        int len = count;
         boolean swapped = false;
         do {
             swapped = false;
@@ -68,7 +68,7 @@ public class Store implements StoreOrganizer {
      * @return the index the animal is found or -1 if the animal is not found
      */
     public int binarySearch(Animal a) {
-        int end = getPets().length;
+        int end = count;
         int start = 0;
         while (start <= end) {
             int middle = (start + end) / 2;
@@ -93,7 +93,7 @@ public class Store implements StoreOrganizer {
      * @return the index the animal is found or -1 if the animal is not found
      */
     public int linearSearch(Animal a) {
-        int len = getPets().length;
+        int len = count;
 
         for (int c = 0; c < len; c++) {
             if (pets[c] == a) {
